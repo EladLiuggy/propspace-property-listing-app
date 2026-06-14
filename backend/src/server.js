@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
+const connectDB = require("./config/db");
 const healthRoutes = require("./routes/health.routes");
 
 dotenv.config();
@@ -14,6 +15,12 @@ app.use("/api/health", healthRoutes);
 
 const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, () => {
-  console.log(`PropSpace backend server running on port ${PORT}`);
-});
+const startServer = async () => {
+  await connectDB();
+
+  app.listen(PORT, () => {
+    console.log(`PropSpace backend server running on port ${PORT}`);
+  });
+};
+
+startServer();
