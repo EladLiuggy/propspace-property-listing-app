@@ -20,10 +20,15 @@ const findUserById = async (id) => {
   return User.findById(id).select("-password");
 };
 
+const findUserByIdWithPassword = async (id) => {
+  return User.findById(id).select("+password");
+};
+
 module.exports = {
   createUser,
   findUserByEmail,
   findUserByUsername,
   findUserByEmailWithPassword,
   findUserById,
+  findUserByIdWithPassword,
 };
