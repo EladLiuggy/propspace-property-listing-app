@@ -94,6 +94,32 @@ const seedDatabase = async () => {
         ],
         author: demoUser._id,
       },
+      {
+        title: "Premium Studio in Bonanjo",
+        description:
+          "A stylish studio apartment with modern interior design, good lighting, secure access, and close connection to business centers.",
+        price: 220000,
+        city: "Douala",
+        country: "Cameroon",
+        propertyType: "Studio",
+        imageUrls: [
+          "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80",
+        ],
+        author: demoUser._id,
+      },
+      {
+        title: "Smart Apartment in Limbe",
+        description:
+          "A clean and modern apartment close to the main road, with good ventilation, secure access, tiled floors, and a calm residential environment.",
+        price: 250000,
+        city: "Limbe",
+        country: "Cameroon",
+        propertyType: "Apartment",
+        imageUrls: [
+          "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1200&q=80",
+        ],
+        author: demoUser._id,
+      },
     ];
 
     await Property.insertMany(sampleProperties);
@@ -111,3 +137,4 @@ const seedDatabase = async () => {
 };
 
 seedDatabase();
+
