@@ -35,13 +35,22 @@ export const AuthProvider = ({ children }) => {
     setUser(userData);
   };
 
+  const updateUser = (updatedUser) => {
+    setUser((currentUser) => ({
+      ...currentUser,
+      ...updatedUser,
+    }));
+  };
+
   const logout = () => {
     localStorage.removeItem("propspace_token");
     setUser(null);
   };
 
   return (
-    <AuthContext.Provider value={{ user, login, logout, authLoading }}>
+    <AuthContext.Provider
+      value={{ user, login, logout, updateUser, authLoading }}
+    >
       {children}
     </AuthContext.Provider>
   );
