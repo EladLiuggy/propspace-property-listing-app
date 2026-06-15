@@ -67,7 +67,8 @@ const MyListings = () => {
             My Listings
           </h1>
           <p className="text-slate-600 mt-2">
-            Manage the properties you have added to PropSpace.
+            Manage, update, or delete the properties you have added to
+            PropSpace.
           </p>
         </div>
 

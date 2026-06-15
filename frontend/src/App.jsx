@@ -7,6 +7,7 @@ import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
 import MyListings from "./pages/MyListings";
 import AddProperty from "./pages/AddProperty";
+import EditProperty from "./pages/EditProperty";
 import Profile from "./pages/Profile";
 
 const App = () => {
@@ -42,6 +43,15 @@ const App = () => {
           element={
             <ProtectedRoute>
               <AddProperty />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/edit-property/:id"
+          element={
+            <ProtectedRoute>
+              <EditProperty />
             </ProtectedRoute>
           }
         />
