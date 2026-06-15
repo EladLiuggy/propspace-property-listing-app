@@ -9,6 +9,7 @@ import MyListings from "./pages/MyListings";
 import AddProperty from "./pages/AddProperty";
 import EditProperty from "./pages/EditProperty";
 import Profile from "./pages/Profile";
+import NotFound from "./pages/NotFound";
 
 const App = () => {
   return (
@@ -64,6 +65,8 @@ const App = () => {
             </ProtectedRoute>
           }
         />
+
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   );
