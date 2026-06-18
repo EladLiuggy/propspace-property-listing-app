@@ -1,4 +1,4 @@
-const InputField = ({
+﻿const InputField = ({
   label,
   type = "text",
   name,
@@ -26,3 +26,4 @@ const InputField = ({
 };
 
 export default InputField;
+

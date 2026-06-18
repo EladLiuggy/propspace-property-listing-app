@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import api from "../api/api";
 import PropertyForm from "../components/PropertyForm";
@@ -100,3 +100,4 @@ const AddProperty = () => {
 };
 
 export default AddProperty;
+

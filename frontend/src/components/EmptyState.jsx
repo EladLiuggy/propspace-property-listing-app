@@ -1,4 +1,4 @@
-const EmptyState = ({ message = "No results found." }) => {
+﻿const EmptyState = ({ message = "No results found." }) => {
   return (
     <div className="bg-white border border-slate-200 rounded-xl p-8 text-center">
       <h3 className="text-xl font-bold text-slate-800 mb-2">Nothing found</h3>
@@ -8,3 +8,4 @@ const EmptyState = ({ message = "No results found." }) => {
 };
 
 export default EmptyState;
+

@@ -1,4 +1,4 @@
-import InputField from "./InputField";
+﻿import InputField from "./InputField";
 import AlertMessage from "./AlertMessage";
 
 const PropertyForm = ({
@@ -108,3 +108,4 @@ const PropertyForm = ({
 };
 
 export default PropertyForm;
+

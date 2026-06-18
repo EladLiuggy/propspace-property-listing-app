@@ -1,4 +1,4 @@
-const professionalImages = {
+﻿const professionalImages = {
   Apartment: [
     "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80",
@@ -37,3 +37,4 @@ export const getProfessionalPropertyImage = (property, index = 0) => {
 
   return typeImages[imageIndex];
 };
+

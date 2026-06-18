@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -43,7 +43,7 @@ const Footer = () => {
       </div>
 
       <div className="border-t border-slate-800 px-6 md:px-8 py-5 flex flex-col md:flex-row md:items-center md:justify-between gap-3 text-slate-400 text-sm">
-        <p>� 2026 PropSpace. All rights reserved.</p>
+        <p>© 2026 PropSpace. All rights reserved.</p>
         <p>Built with React, Express, Node.js, and MongoDB.</p>
       </div>
     </footer>
@@ -51,3 +51,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

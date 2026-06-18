@@ -1,4 +1,4 @@
-const FilterSidebar = ({ filters, onChange, onSubmit, onReset }) => {
+﻿const FilterSidebar = ({ filters, onChange, onSubmit, onReset }) => {
   return (
     <div className="space-y-5 lg:sticky lg:top-6">
       <form
@@ -107,3 +107,4 @@ const FilterSidebar = ({ filters, onChange, onSubmit, onReset }) => {
 };
 
 export default FilterSidebar;
+

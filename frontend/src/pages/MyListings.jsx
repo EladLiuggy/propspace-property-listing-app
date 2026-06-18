@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import api from "../api/api";
 import PropertyCard from "../components/PropertyCard";
@@ -117,3 +117,4 @@ const MyListings = () => {
 };
 
 export default MyListings;
+

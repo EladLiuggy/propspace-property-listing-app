@@ -1,4 +1,4 @@
-const AlertMessage = ({ type = "error", message }) => {
+﻿const AlertMessage = ({ type = "error", message }) => {
   if (!message) return null;
 
   const style =
@@ -14,3 +14,4 @@ const AlertMessage = ({ type = "error", message }) => {
 };
 
 export default AlertMessage;
+

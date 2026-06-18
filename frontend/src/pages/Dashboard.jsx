@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+﻿import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import api from "../api/api";
 import { useAuth } from "../context/AuthContext";
@@ -145,7 +145,7 @@ const Dashboard = () => {
                     </h3>
 
                     <p className="text-slate-600">
-                      {property.city}, {property.country} �{" "}
+                      {property.city}, {property.country} ·{" "}
                       {property.propertyType}
                     </p>
                   </div>
@@ -204,3 +204,4 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
+

@@ -1,4 +1,4 @@
-import { getProfessionalPropertyImage } from "../utils/propertyImages";
+﻿import { getProfessionalPropertyImage } from "../utils/propertyImages";
 
 const PropertyCard = ({ property, index }) => {
   const professionalImage = getProfessionalPropertyImage(property, index);
@@ -58,3 +58,4 @@ const PropertyCard = ({ property, index }) => {
 };
 
 export default PropertyCard;
+
